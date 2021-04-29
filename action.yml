@@ -1,0 +1,14 @@
+name: 'kubectl with aws eks for Github Actions'
+description: 'use aws cli to get eks authentication, then execute kubectl'
+author: Rodick.OEC
+branding:
+  icon: 'cloud'
+  color: 'orange'
+inputs:
+  cluster:
+    description: 'eks cluster name'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
